@@ -1,0 +1,19 @@
+.logos{
+    background: url('../images/bg-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .logoo{
+        justify-content: space-around;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    @media (max-width: 1050px){
+        .logoo{
+            justify-content: space-around;
+            flex-wrap: wrap;
+            img{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

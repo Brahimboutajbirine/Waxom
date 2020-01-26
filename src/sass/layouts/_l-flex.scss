@@ -1,0 +1,18 @@
+/*flex box row*/
+
+.row{
+    display: flex;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}
+

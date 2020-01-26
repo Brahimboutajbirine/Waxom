@@ -1,0 +1,39 @@
+header
+    .container
+        .row.column
+            .top-header.row
+                .logo.row
+                    img(src="../images/logos.png", alt="logo")
+                    p Waxom
+                nav.nav
+                    - const values = ["Home", "About Us", "Portfolio", "Features", "Blog", "Pricing", "Shortcodes", "Contact",];
+                    ul.row
+                        each i in values
+                            li
+                                a(href="#")=i
+                        li 
+                            a(href="#")
+                                img(src="../images/icon-cart.png", alt="cart")
+                        li
+                            a(href="#")
+                                img(src="../images/icon-search.png", alt="search")
+    .slider.row
+        .left 
+            img(src="../images/left.png", alt="left-arrow")
+        .headline
+            h1
+                p Unique and Modern Design
+                p Portfolio PSD Template
+                p 
+                    |Nam liber tempor cum soluta nobis eleifend option congue nihil imper 
+                    br 
+                    |diet doming id quod mazim placerat facer possim assum.
+            button.btn get started
+        .right
+            img(src="../images/right.png", alt="right-arrow")
+        .dot
+            .point
+            .point
+            .point
+            .point
+            .point

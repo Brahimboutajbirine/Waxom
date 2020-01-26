@@ -1,0 +1,162 @@
+.posts{
+    .head{
+        font-size: 30px;
+        font-family: $ra;
+        color: rgb(85, 85, 85);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;  
+        padding-top: reset-size(30, 1.2, 80);        
+    }
+    .inves{
+        font-size: 16px;
+        font-family: $mon;
+        color: rgb(140, 140, 140);
+        line-height: 1.75;
+        text-align: center;    
+        padding-top: reset-size(16, 1.75, 30);
+        padding-bottom: reset-size(16, 1.75, 40);      
+    }
+    .my-posts{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .post{
+            flex-basis: 31.63%;
+            margin-bottom: 20px;
+            .picture{
+                height: 219px;
+                .date{
+                    padding-top: 20px;
+                    padding-left: 20px;
+                }
+                p:nth-of-type(1){
+                    font-size: 24px;
+                    font-family: $mon;
+                    color: rgb(255, 255, 255);
+                    line-height: 0.833;
+                    text-align: center; 
+                    background-color: #363636;
+                    width: 50px;              
+                    padding-top: reset-size(24, 0.833, 9);       
+                    padding-bottom: reset-size(24, 0.833, 9);       
+                }
+                p:nth-of-type(2){
+                    font-size: 12px;
+                    font-family: $ra;
+                    color: rgb(255, 255, 255);
+                    line-height: 1.667;     
+                    text-align: center;
+                    background-color: #252525;
+                    width: 50px;              
+                    padding-top: reset-size(12, 1.667, 7);       
+                    padding-bottom: reset-size(12, 1.667, 7);                  
+                }
+            }
+            &:nth-of-type(1){
+                .picture{
+                    background: url('../images/photo11.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+            }
+            &:nth-of-type(2){
+                .picture{
+                    background: url('../images/photo22.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+            }
+            &:nth-of-type(3){
+                .picture{
+                    background: url('../images/photo33.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+            }
+            .text{
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(248, 248, 248);
+                background-color: rgba(119, 119, 119, 0);
+                padding-left: 30px;
+                .one{
+                    font-size: 20px;
+                    font-family: $ra;
+                    color: rgb(85, 85, 85);
+                    line-height: 1.2;
+                    text-align: left; 
+                    padding-top: reset-size(20, 1.2, 30);                         
+                }
+                .two{
+                    font-size: 14px;
+                    font-family: $mon;
+                    color: rgb(140, 140, 140);
+                    line-height: 1.571;
+                    text-align: left;
+                    padding-top: reset-size(14, 1.571, 22);                          
+                }
+                .three{
+                    font-size: 14px;
+                    font-family: $mon;
+                    color: rgb(199, 178, 153);
+                    line-height: 1.429;
+                    text-align: left; 
+                    padding-top: reset-size(14, 1.429, 30);                         
+                    padding-bottom: reset-size(14, 1.429, 32);                         
+                }
+            }
+            &:hover{
+                .date{
+                    p:nth-of-type(1){background-color: #c7b299;}
+                    p:nth-of-type(2){background-color: #a48d72;}
+                }
+                .text{
+                    background-color: #362f2d;
+                    border: none;
+                    .one{
+                        color: #c7b299;
+                    }
+                    .two{
+                        color: #fff;
+                    }
+                    .three{
+                        color: #c7b299;
+                    }
+                }
+            }
+        }
+       .arrow{
+           flex-basis: 100%;  
+           justify-content: center;
+           padding-top: 40px;
+           padding-bottom: 80px;
+           .left,.right{
+                width: 22px;
+                height: 22px;  
+                border-radius: 50%;
+                border-color: #d7d7d7;
+                border-style: solid;
+                text-align: center;
+                color: #d7d7d7;  
+                &:hover{
+                    border-color: #c7b299;
+                    color: #c7b299;  
+                }          
+           }    
+           .left{
+               margin-right: 8px;
+           }    
+        } 
+    }
+    @media (max-width: 1000px){
+        .my-posts{
+            justify-content: center;
+            .post{
+                flex-basis: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.slider{
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    .left{
+        flex-basis: pxtopercent(345, 1920);
+        text-align: left;
+        padding-left: pxtopercent(150, 1920);
+    }
+    .headline{
+        flex-basis: pxtopercent(1230, 1920);
+        text-align: center;
+        h1{
+            padding-top: reset-size(36, 1.2, 285);
+            p{
+                color: $f-color;
+                &:nth-of-type(1){
+                    font-size: 36px;
+                    font-family: $ra;
+                    line-height: 1.2;                      
+                }
+                &:nth-of-type(2){
+                    font-size: 52px;
+                    font-family: $ra;
+                    font-weight: bold;
+                    line-height: 1.2;                      
+                }
+                &:nth-of-type(3){
+                    font-size: 16px;
+                    font-family: $mon;
+                    line-height: 1.5;  
+                    padding-bottom: reset-size(16, 1.5, 50);                    
+                }
+            }
+        }
+        .btn{
+            padding: 21px 37px;
+            margin-bottom: 328px;
+        }
+        
+    }
+    .dot{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        .point{
+            border-radius: 50%;
+            background: #979594;
+            width: 11px;
+            height: 11px;
+            opacity: 0.502;
+            margin-right: 10px;
+            &:hover{
+                background: transparent;
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(211, 193, 173);
+            }                
+        }
+    }
+    .right{
+        flex-basis: pxtopercent(345, 1920);
+        text-align: right;
+        padding-right: pxtopercent(150, 1920);
+    }
+    @media (max-width: 1224px) {
+        .headline{
+            h1{
+                padding-top: 50px;
+            }
+            .btn{
+                margin-bottom: 50px;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .left,.right{
+            display: none;
+        }
+        .headline{
+            flex-basis: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            h1{
+                padding-top: 50px;
+            }
+            .btn{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

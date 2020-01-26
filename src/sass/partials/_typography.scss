@@ -1,0 +1,23 @@
+// =============================================================================
+// import fonts
+// =============================================================================
+@include font-face('Montserrat', '../fonts/Montserrat-ExtraLight', 200, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat-Light', 300, normal, ttf);
+
+@include font-face('Raleway', '../fonts/Raleway-Regular', 400, normal, ttf);
+@include font-face('Raleway', '../fonts/Raleway-Medium', 500, normal, ttf);
+@include font-face('Raleway', '../fonts/Raleway-SemiBold', 600, normal, ttf);
+@include font-face('Raleway', '../fonts/Raleway-Bold', 700, normal, ttf);
+@include font-face('Raleway', '../fonts/Raleway-ExtraBold', 800, normal, ttf);
+
+@include font-face('Roboto', '../fonts/Roboto-Regular', 400, normal, ttf);
+
+
+
+// =============================================================================
+// variables
+// =============================================================================
+
+$ra : 'Raleway', sans-serif;
+$mon : 'Montserrat', sans-serif;
+$rob : 'Roboto', sans-serif;

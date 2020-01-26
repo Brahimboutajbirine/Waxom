@@ -1,0 +1,13 @@
+.logo{
+    align-items: center;
+    color: $f-color;
+    font-size: 34px;
+    font-family: $ra;
+    line-height: 1.2;       
+}
+@media (max-width: 1530px) {
+    .logo{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}

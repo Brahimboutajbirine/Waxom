@@ -1,0 +1,40 @@
+// =============================================================================
+// partials
+// =============================================================================
+
+@import 'partials/mixin';
+@import 'partials/function';
+@import 'partials/color';
+@import 'partials/typography';
+
+// =============================================================================
+// base
+// =============================================================================
+
+@import 'base/normalize';
+@import 'base/general';
+
+
+// =============================================================================
+// layouts
+// =============================================================================
+
+@import 'layouts/l-container';
+@import 'layouts/l-flex';
+@import 'layouts/l-header';
+
+// =============================================================================
+// components
+// =============================================================================
+
+@import 'components/logo';
+@import 'components/navbar';
+@import 'components/slider';
+@import 'components/first';
+@import 'components/projects';
+@import 'components/video';
+@import 'components/mobile';
+@import 'components/posts';
+@import 'components/logos';
+@import 'components/footer';
+@import 'components/btn';
