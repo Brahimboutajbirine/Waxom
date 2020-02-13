@@ -1,4 +1,5 @@
 .slider{
+    
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
@@ -64,6 +65,9 @@
         text-align: right;
         padding-right: pxtopercent(150, 1920);
     }
+    .glider-next{
+        right: 0;
+    }
     @media (max-width: 1224px) {
         .headline{
             h1{
@@ -74,7 +78,7 @@
             }
         }
     }
-    @media (max-width: 500px) {
+    @media (max-width: 900px) {
         .left,.right{
             display: none;
         }
